@@ -2,12 +2,12 @@ import { db } from '@/config/firebase.config';
 import type { Interview, UserAnswer } from '@/types';
 import { useAuth } from '@clerk/clerk-react';
 import { collection, doc, getDoc, getDocs, query, where } from 'firebase/firestore';
-import React, { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'sonner';
 import LoaderPage from './LoaderPage';
 import { CustomBreadCrumb } from '@/components/custom-bread-crumb';
-import { CircleCheck, Heading, Star } from 'lucide-react';
+import { CircleCheck, Star } from 'lucide-react';
 import { Headings } from '@/components/headings';
 import { InterviewPin } from '@/components/pin';
 import {

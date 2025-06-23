@@ -13,7 +13,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
-import React from 'react'
 
 const Dashboard = () => {
   const [interviews, setInterviews] = useState<Interview[]>([]);

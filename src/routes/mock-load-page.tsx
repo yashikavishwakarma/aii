@@ -1,5 +1,5 @@
 import type { Interview } from '@/types';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import LoaderPage from './LoaderPage';
 import { CustomBreadCrumb } from '@/components/custom-bread-crumb';
