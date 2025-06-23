@@ -1,54 +1,104 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+markdown
+Copy
+Edit
+<h1 align="center">🧠 Mock AI Interview</h1>
+<p align="center"><b>React + TypeScript + Vite</b> based web app built for seamless AI-powered interview experiences.</p>
+<p align="center">
+  🔗 <a href="https://mock-ai-interview-814f0.web.app/" target="_blank"><b>Live Demo</b></a> •
+  💻 <a href="https://github.com/yashikavishwakarma/aii"><b>Source Code</b></a>
+</p>
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ React – Modern JavaScript UI library
+- ⚡ Vite – Fast development server and build tool
+- 🟦 TypeScript – Strong typing for JavaScript
+- 🔥 Firebase Hosting – Fast, global deployment
+- 🧠 @vitejs/plugin-react-swc – SWC-powered fast refresh
+- 📏 ESLint – Linting and code style enforcement
 
-## Expanding the ESLint configuration
+## 🌐 Live Project
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project is deployed using Firebase Hosting.  
+🔗 **Live Demo:** [https://mock-ai-interview-814f0.web.app/](https://mock-ai-interview-814f0.web.app/)
 
-```js
+## 📦 Installation & Setup
+
+```bash
+git clone https://github.com/yashikavishwakarma/aii.git
+cd aii
+npm install
+🚀 Run Development Server
+bash
+Copy
+Edit
+npm run dev
+🏗️ Build for Production
+bash
+Copy
+Edit
+npm run build
+🔍 Preview Production Build Locally
+bash
+Copy
+Edit
+npm run preview
+📐 ESLint Setup (TypeScript + React)
+For enabling type-aware lint rules in production:
+
+ts
+Copy
+Edit
 export default tseslint.config({
   extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
     ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
+    // Or stricter:
+    // ...tseslint.configs.strictTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
   ],
   languageOptions: {
-    // other options...
     parserOptions: {
       project: ['./tsconfig.node.json', './tsconfig.app.json'],
       tsconfigRootDir: import.meta.dirname,
     },
   },
-})
-```
+});
+For React-specific linting:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
+ts
+Copy
+Edit
 import reactX from 'eslint-plugin-react-x'
 import reactDom from 'eslint-plugin-react-dom'
 
 export default tseslint.config({
   plugins: {
-    // Add the react-x and react-dom plugins
     'react-x': reactX,
     'react-dom': reactDom,
   },
   rules: {
-    // other rules...
-    // Enable its recommended typescript rules
     ...reactX.configs['recommended-typescript'].rules,
     ...reactDom.configs.recommended.rules,
   },
-})
-```
+});
+📁 Folder Structure
+php
+Copy
+Edit
+aii/
+├── public/               # Static files
+├── src/                  # Source code
+│   ├── assets/           # Images and other assets
+│   ├── components/       # Reusable components
+│   ├── App.tsx           # Main app component
+│   └── main.tsx          # Entry point
+├── dist/                 # Production build output (auto-generated)
+├── firebase.json         # Firebase Hosting configuration
+├── index.html            # Base HTML file
+├── package.json          # Project metadata and scripts
+├── tsconfig.json         # TypeScript configuration
+├── vite.config.ts        # Vite build configuration
+└── .eslintrc.cjs         # ESLint configuration
+🧾 License
+This project is licensed under the MIT License.
