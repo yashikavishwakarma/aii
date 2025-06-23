@@ -1,59 +1,58 @@
-
-markdown
-Copy
-Edit
 <h1 align="center">🧠 Mock AI Interview</h1>
-<p align="center"><b>React + TypeScript + Vite</b> based web app built for seamless AI-powered interview experiences.</p>
+
 <p align="center">
-  🔗 <a href="https://mock-ai-interview-814f0.web.app/" target="_blank"><b>Live Demo</b></a> •
-  💻 <a href="https://github.com/yashikavishwakarma/aii"><b>Source Code</b></a>
+  <b>React + TypeScript + Vite</b> based web app built for seamless AI-powered interview experiences.
 </p>
 
-## 🚀 Tech Stack
+<p align="center">
+  🔗 <a href="https://mock-ai-interview-814f0.web.app/" target="_blank"><b>Live Demo</b></a> •
+  💻 <a href="https://github.com/yashikavishwakarma/aii" target="_blank"><b>Source Code</b></a>
+</p>
 
-- ⚛️ React – Modern JavaScript UI library
-- ⚡ Vite – Fast development server and build tool
-- 🟦 TypeScript – Strong typing for JavaScript
-- 🔥 Firebase Hosting – Fast, global deployment
-- 🧠 @vitejs/plugin-react-swc – SWC-powered fast refresh
-- 📏 ESLint – Linting and code style enforcement
+<hr/>
 
-## 🌐 Live Project
+<h2>🚀 Tech Stack</h2>
+<ul>
+  <li><b>React</b> – JavaScript UI library</li>
+  <li><b>Vite</b> – Fast dev server and bundler</li>
+  <li><b>TypeScript</b> – Type-safe JavaScript</li>
+  <li><b>Firebase Hosting</b> – Global deployment</li>
+  <li><b>@vitejs/plugin-react-swc</b> – Fast refresh</li>
+  <li><b>ESLint</b> – Linting and formatting</li>
+</ul>
 
-This project is deployed using Firebase Hosting.  
-🔗 **Live Demo:** [https://mock-ai-interview-814f0.web.app/](https://mock-ai-interview-814f0.web.app/)
+<h2>🌐 Live Demo</h2>
+<p>
+  Hosted on Firebase:<br/>
+  <a href="https://mock-ai-interview-814f0.web.app/" target="_blank">https://mock-ai-interview-814f0.web.app/</a>
+</p>
 
-## 📦 Installation & Setup
+<h2>📦 Installation & Setup</h2>
 
-```bash
+<pre><code># Clone the repository
 git clone https://github.com/yashikavishwakarma/aii.git
 cd aii
-npm install
-🚀 Run Development Server
-bash
-Copy
-Edit
-npm run dev
-🏗️ Build for Production
-bash
-Copy
-Edit
-npm run build
-🔍 Preview Production Build Locally
-bash
-Copy
-Edit
-npm run preview
-📐 ESLint Setup (TypeScript + React)
-For enabling type-aware lint rules in production:
 
-ts
-Copy
-Edit
-export default tseslint.config({
+# Install dependencies
+npm install
+</code></pre>
+
+<h3>Run Development Server</h3>
+<pre><code>npm run dev</code></pre>
+
+<h3>Build for Production</h3>
+<pre><code>npm run build</code></pre>
+
+<h3>Preview Production Build</h3>
+<pre><code>npm run preview</code></pre>
+
+<h2>🧹 ESLint Setup</h2>
+
+<p><b>Enable type-aware lint rules in production:</b></p>
+<pre><code>export default tseslint.config({
   extends: [
     ...tseslint.configs.recommendedTypeChecked,
-    // Or stricter:
+    // or stricter:
     // ...tseslint.configs.strictTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
   ],
@@ -64,13 +63,11 @@ export default tseslint.config({
     },
   },
 });
-For React-specific linting:
+</code></pre>
 
-ts
-Copy
-Edit
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<p><b>React-specific rules:</b></p>
+<pre><code>import reactX from 'eslint-plugin-react-x';
+import reactDom from 'eslint-plugin-react-dom';
 
 export default tseslint.config({
   plugins: {
@@ -82,23 +79,28 @@ export default tseslint.config({
     ...reactDom.configs.recommended.rules,
   },
 });
-📁 Folder Structure
-php
-Copy
-Edit
-aii/
+</code></pre>
+
+<h2>📁 Folder Structure</h2>
+<pre><code>aii/
 ├── public/               # Static files
-├── src/                  # Source code
-│   ├── assets/           # Images and other assets
-│   ├── components/       # Reusable components
-│   ├── App.tsx           # Main app component
-│   └── main.tsx          # Entry point
-├── dist/                 # Production build output (auto-generated)
-├── firebase.json         # Firebase Hosting configuration
-├── index.html            # Base HTML file
-├── package.json          # Project metadata and scripts
-├── tsconfig.json         # TypeScript configuration
-├── vite.config.ts        # Vite build configuration
-└── .eslintrc.cjs         # ESLint configuration
-🧾 License
-This project is licensed under the MIT License.
+├── src/                  # App source code
+│   ├── assets/           
+│   ├── components/       
+│   ├── App.tsx           
+│   └── main.tsx          
+├── dist/                 # Production build output
+├── firebase.json         # Firebase config
+├── index.html            
+├── package.json          
+├── tsconfig.json         
+├── vite.config.ts        
+└── .eslintrc.cjs         
+</code></pre>
+
+<hr/>
+
+<p align="center">
+  Made with ❤️ using React + TypeScript + Vite<br/>
+  Deployed live via Firebase by <a href="https://github.com/yashikavishwakarma" target="_blank">Yashika Vishwakarma</a>
+</p>
